@@ -553,6 +553,7 @@ pre code {
   padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -10343,4 +10344,15 @@ form .row:first-child .floating-label-form-group {
   font-weight: bolder;
   width: 50%;
   align-items: center;
+}
+
+/* afbeeldingen van storyboard*/
+.img-storyboard {
+  width: 60%;
+  height: auto;
+}
+
+.pagina{
+  width: 70%;
+  margin: auto;
 }
