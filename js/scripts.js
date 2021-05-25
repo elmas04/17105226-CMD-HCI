@@ -75,3 +75,6 @@
     });
 
 })(jQuery); // End of use strict
+
+
+//CODE VOOR DE AFBEELDING VAN DE WORKSHOP VAN ARDUINO

@@ -54,86 +54,330 @@
                 <p class="masthead-subheading font-weight-light mb-0">
                     <h6>WORKSHOP</h6>
                     
-                    Voor deze opdrachten kregen we van school vijf onderwerpen voorgesteld waarvan we drie uit moesten kiezen. Van de uitgekozen drie onderwerpen moesten we een concept bedenken dat te maken had met VR of AR.
+                    In de tweede week van de vak HCI hebben we ons verdiept in Arduino en de fysieke computerwereld. We kregen verschillende opdrachten die we moesten uitvoeren. Ik vond deze opdrachten erg leuk en interessant om te doen. Ik heb er veel van geleerd. Om de resultaten van een aantal opdrachten te laten zien, heb ik geprobeerd de stappen die ik nam zo goed mogelijk te filmen. Bijna alle video's laten zien hoe ik mijn Arduino-board in elkaar zet.
                 </p>
             </div>
         </header>
         <!-- Text-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
-                <!-- titel alinea -->
-                <h5 class="kop">Research</h5>
-
-                <!-- tekst-->
+                <!-- EXERCISE 3 -->
+                
                 <div class="pagina">
+                <h5 class="kop">Exercise 3: Blink multiple LEDS</h5>
+
                     <p class="tekst">  
-                        Ik ging voornamelijk onderzoek doen hoe ze het in de game wereld gingen gebruiken met het idee dat zij meer ervaring hebben op dit gebied.
+                        De opdracht was dat het groene licht twee keer zo sneller zou knipperen dan het geel licht. Ik heb de kabels op dezelfde manier aangesloten als in het voorbeeld van de handleiding. Vervolgens kon ik de code aanpassen door aan te geven welke lichten aan en uit moesten. Ik deed dit door middel van de HIGH en LOW waardes. HIGH staat voor aan en LOW staat voor uit. De DELEY-code geeft aan hoe lang de code moet wachten om naar de eerstvolgende code te gaan. 
                     </p>
-                    <br>
+                    <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/01blinkmultipleleds-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/01blinkmultipleleds.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+        
+                    </div>   
 
-                 <!-- titel alinea -->
-                 <h5 class="kop">Healthcare</h5>
+                    <br>   <br>   <br>
+
+                 <!-- EXERCISE 4 -->
+                 <h5 class="kop">Exercise 4: Fade LED – Analog Output</h5>
 
                     <p class="tekst">  
-                        Sommige mensen die een grote operatie ondergaan, willen weten wat er tijdens zo'n operatie zal gebeuren en wat de resultaten op hun lichaam zullen zijn. Volgens de procedure vertelt de dokter de patiënt wat er tijdens de operatie wordt gedaan, maar de resultaten fysiek worden pas na de operatie door de patiënt gezien.
+                        Voor opdracht vier mocht ik de kabel wegwerking uit opdracht die gebruiken. Het enige verschil was dat ik de groene en gele kabel naar pin 9 en 10 moest verplaatsen om de aan mij gegeven code aan het werk te krijgen.
                         <br><br>
-                        VR-technologie zou hiervoor een oplossing kunnen zijn. De dokter kan de patiënt met een VR-bril laten zien hoe de operatie zal verlopen en vervolgens kan hij met deze technologie de resultaten laten zien. Door vooraf te zien wat er precies gebeurt tijdens een operatie, zal de patiënt met een gerust hart de operatie ondergaan en dankzij VR-technologie kan de patiënt goed inschatten wat de resultaten zullen zijn.  
+                        De opdracht was om het ene licht langzaam aan te doen en het andere langzaam uit te doen, en dit moet tegelijkertijd gebeuren. Om dit zo soepel mogelijk te doen, heb ik besloten om de for-loop vier keer in de loop te gebruiken. De opdracht was dat de ene licht langzaam aan gaat en de andere licht langzaam uit en dit moet tegelijkertijd gebeuren. Om dit zo soepel mogelijk te doen heb ik ervoor besloten om in de loop het for-loop viermaal te gebruiken.
+                        <br><br>
+                        In het eerste deel heb ik de helderheid van het groene licht ingesteld op kleiner dan of gelijk aan 255 en ervoor gezorgd dat er steeds meer licht wordt toegevoegd. In de volgende for-loop heb ik het omgekeerde gedaan door de helderheid groter dan of gelijk aan 1 in te stellen om steeds licht te verminderen. Ik heb ook exact dezelfde code gebruikt voor het gele lampje. In de video is duidelijk te zien dat het ene lampje langzaam uitgaat terwijl het lampje brandt. Ik heb exact hetzelfde code ook gebruikt voor het gele licht. In de video is goed te zien dat de ene licht langzaam uitgaat terwijl de aan de aan gaat.
+                        <br>
+
                     </p>
+
+                 <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/04fadeledanalogoutput-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/04fadeledanalogoutput.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>    
+
 
             <br>
 
-                 <!-- titel alinea -->
-                 <h5 class="kop">Public transport</h5>
+                 <!-- EXERCISE 6 -->
+                 <h5 class="kop">Exercise 6: Controlling a LED with a potmeter</h5>
 
                     <p class="tekst">  
-                        Heb jij dat ooit meegemaakt, dat je in het buitenland op een bus wachtte en tijdens het wachten mooie bezienswaardigheden zag, maar er geen informatie over kon vinden. Met een applicatie die AR-technologie gebruikt, zou je de informatie op een veel leukere en informatievere manier kunnen vinden.
+                        De opdracht was dat als ik de Potentiometer in de ene richting draai, licht A uitgaat en lamp B gaat aan en als ik de Potentiometer de andere kant op draai, gaat lamp A aan en gaat lamp B uit. Om dit te doen heb ik het voorbeeld in het boek gebruikt om alle kabels op de juiste plek te linken. Volgens de handleiding mocht ik de codes gebruiken die ik in opdracht vier had gemaakt. Ik moest de codes wel aanpassen voor een juiste werking.  
                         <br><br>
-                        Het idee van de applicatie is dat de gebruiker bij elke bushalte waar een belangrijk aandachtspunt plaatsvindt een melding krijgt dat hij een AR-ervaring kan ervaren. Wanneer de gebruiker de applicatie opent, vertelt de camera hem welke kant hij op moet. Zodra het juiste punt is gevonden, zien ze de historische gebeurtenis van die plaats tot leven komen en ontvangen ze informatie. Eenmaal in de bus kunnen ze.
+                        Met behulp van de map functie heb ik de sensorValue aangepast van 1023 tot 255. 1023 bepaald de rotatie die de Potentiometer kan maken en 255 is de maximale waarde van de ledlamp. Vervolgens heb ik in het analogWrite bij het gele lamp 1023-sensorValue toegevoegd zodat de gele lamp begint licht te geven terwijl het groene lampje uit staat.
+                        <br>
                     </p>
+
+                 <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/06controllingaledwithapotmeter-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/06controllingaledwithapotmeter.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+            <br>
+
+                 <!-- EXERCISE 7 -->
+                 <h5 class="kop">Exercise 7: LED Matrix</h5>
+
+                    <p class="tekst">  
+                            Heb jij dat ooit meegemaakt, dat je in het buitenland op een bus wachtte en tijdens het wachten mooie bezienswaardigheden zag, maar er geen informatie over kon vinden. Met een applicatie die AR-technologie gebruikt, zou je de informatie op een veel leukere en informatievere manier kunnen vinden.Persoonlijk vond ik deze opdracht wel het allerleukste. De opdracht was heel eenvoudig, je moest de kabel wegwerking bouwen die tekstueel in de handleiding was geschreven. Er was een afbeelding als voorbeeld, maar die klopte niet helemaal omdat er een andere ledmatrix werd gebruikt. Als de kabel wegwerking goed was, werkt de code die in de handleiding was gegeven prima. De video laat duidelijk zien dat het gezicht elke seconde verandert van blij naar verdrietig.
+                        <br><br>
+                                            <i>* Ik vond deze opdracht zo leuk dat ik besloot eraan te blijven werken. Door aan de Potentiometer te draaien, verschijnt of verdwijnt een boot.</i>
+                    </p>
+                         <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs"> 
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/07ledmatrix-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="extra-video">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/07ledmatrix.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                                <br>
+                                <div class="extra-video">
+                                    <a class="bewijs-item" href="#!">
+                                        <video  class="arduinovideo" controls> <source src="assets/img/portfolio/07ledmatrix-extra.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>  
+
 
             <br>
 
-                 <!-- titel alinea -->
-                 <h5 class="kop">Public transport</h5>
+                 <!-- EXERCISE 8 -->
+                 <h5 class="kop">Exercise 8: Control the LED with light</h5>
 
                     <p class="tekst">  
-                        Heb jij dat ooit meegemaakt, dat je in het buitenland op een bus wachtte en tijdens het wachten mooie bezienswaardigheden zag, maar er geen informatie over kon vinden. Met een applicatie die AR-technologie gebruikt, zou je de informatie op een veel leukere en informatievere manier kunnen vinden.
+                        Bij deze opdracht was het de bedoeling dat de ledlampen uitgaan als er geen licht op schijnt, als er licht op schijnt, gaan de ledlampen aan. Ik had dezelfde opdracht ook gemaakt in opdracht zes. In plaats van de Potentiometer zal ik nu een LDR gebruiken.
                         <br><br>
-                        Het idee van de applicatie is dat de gebruiker bij elke bushalte waar een belangrijk aandachtspunt plaatsvindt een melding krijgt dat hij een AR-ervaring kan ervaren. Wanneer de gebruiker de applicatie opent, vertelt de camera hem welke kant hij op moet. Zodra het juiste punt is gevonden, zien ze de historische gebeurtenis van die plaats tot leven komen en ontvangen ze informatie. Eenmaal in de bus kunnen ze daarover lezen. Als ze de punten volgen, sparen ze punten en kunnen ze kortingen krijgen op bepaalde plaatsen in de stad.
+                        Om te beginnen moest ik eerst de kabel wegwerking van het board dat in de handleiding werd aangegeven maken. Voor deze opdracht mocht ik de codes gebruiken die ik ook in opdracht zes had gebruikt. Het enige wat ik in de code heb veranderd is de sensorValue van het groene lampje in de analogWrite. Omdat de opdracht was dat beide lampen tegelijkertijd moesten branden en uitgaan, moesten de waardes hier hetzelfde zijn, dus heb ik de waardes van analogWrite (greenLedPin, sensorValeu) aangepast naar analogWrite (greenLedPin, 1023-sensorValeu).
                     </p>
+
+                                     <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                                     <div class="bewijs">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                       <img class="img-bewijs" src="assets/img/portfolio/controletheledwithlight-code.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/controletheledwithlight.mp4" type="video/mp4">
+                                                    </video>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
 
             <br>
 
-                 <!-- titel alinea -->
-                 <h5 class="kop">Sport/healthylifestyle</h5>
+                 <!-- EXERCISE 9 -->
+                 <h5 class="kop">Exercise 9: Sound </h5>
 
                     <p class="tekst">  
-                        Temple Run en Subway Surfers heb je vast wel is zien tegenkomen in de appstore/play store. Deze spellen zijn gebaseerd op het ontwijken van obstakels en het verzamelen van punten. Hoe meer punten mensen verzamelen, hoe meer motivatie ze hebben om het spel te spelen. 
+                        Om te beginnen moest ik exact dezelfde kabel wegwerking bouwen als in het voorbeeld. Daarna kon ik beginnen met coderen. Met de code die ik kreeg van de handleiding, kon ik verder uitzoeken hoe ik mijn eigen deuntje kon maken. Ik besloot de ringtone van de oude Nokia 3310 te coderen. Op het internet vond ik de muzieknoten en met de frequenties die in de handleiding en een beetje van mijn eigen intuïtie, slaagde ik erin om de ringtone van Nokia 3310 te coderen.
                         <br><br>
-                        Mijn idee is om een game als deze virtueel te realiseren. Het systeem zou gebaseerd zijn op de bewegingen die je maakt. In de wereld die je ziet zul je verschillende obstakels moeten ontwijken door omhoog, naar links of naar rechts te springen. De punten die je in die wereld verzamelt, motiveren jou als gebruiker om verder te spelen. Zonder dat je je ervan bewust bent, doe je tijdens zo'n spel cardio en dit zou meer dan de dagelijkse oefening zijn die je in je normale leven doet.
+                        VRAAG OM FEEDBACK WAT ER WORDT BEDOELD MET EEN SIRENE 
                         
-                    </p>
+                    </p>   
+                                    <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                                     <div class="bewijs">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                       <img class="img-bewijs" src="assets/img/portfolio/sound-code.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/sound.mp4" type="video/mp4">
+                                                    </video>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>   
+             <br>
+
+                 <!-- EXERCISE 11 -->
+                <h5 class="kop">Exercise 11: Distance </h5>
+
+                    <p class="tekst">  
+                        Voor deze opdracht moest ik de Ultrasonic Proximity Sensor gebruiken. Deze sensor werkt doormiddel van hoge geluidsgolven die het menselijk oor niet kan waarnemen. Zonder contact te hebben met het apparaat, gebruik je deze sensor om ervoor te zorgen dat het apparaat doet wat jij wilt vanaf een afstand.
+                        <br><br>
+                        In dit geval was de opdracht dat het ledlamp aan zou gaan als mijn hand voor de sensor komt. Eerst heb ik me gehouden aan de kabel wegwerking van het voorbeeld en daarna heb ik de codes in de Arduino toegevoegd. Om te kijken of alles goed werkt heb ik gebruik gemaakt van de Serial monitor. Nadat ik zeker was, dat dit deel van de opdracht goed was, ging ik verder naar het laatste deel.
+                        <br><br>
+                        Voor de lamp heb ik dezelfde structuur gebruikt die ik in opdracht twee op het Arduino-bord had gemaakt. Vervolgens heb ik de codes toegevoegd die in de handleiding stond en heb ik gecontroleerd of de sensor begon te werken. Voor de video heb ik de afstand aangepast van 50 cm naar 10 cm, dit zou betekenen dat als een object voor de sensor binnen 10 cm komt, de ledlamp aan gaat.
+                        
+                    </p> 
                     
+                                     <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                                     <div class="bewijs">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                       <img class="img-bewijs" src="assets/img/portfolio/distance-code.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a class="bewijs-item" href="#!">
+                                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/distance.mp4" type="video/mp4">
+                                                    </video>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+             <br>
             
-              
+                 <!-- EXERCISE 12 -->
+                <h5 class="kop">Exercise 12: Arduino and Processing </h5>
+
+                    <p class="tekst">  
+                        Deze opdracht was een combinatie van opdracht 5 of 10. De bedoeling was dat de Potentiometer of de NFC ervoor zou zorgen dat de cirkel op je scherm groter of kleiner wordt. We mochten zelf beslissen welke van de oude opdrachten we konden gebruiken. Ik koos voor opdracht vijf. In opdracht vijf had ik een Potentiometer gebruikt. Door te draaien kon ik de waardes in de Serial monitor veranderen.
+                        <br><br>
+                        Voor de cirkel moest ik een programma genaamd Processing downloaden op mijn computer. Vervolgens moest ik de codes uit de handleiding toevoegen aan mijn Arduino en Processing. Helaas werkte het niet. Mijn Processing kon geen contact maken met mijn Arduino-board. Het duurde niet lang tot ik zag waar het probleem zat. In mijn Processing moest ik de myPort-code wijzigen. Ik moest aangeven welk port mijn Arduino-board was verbonden.
+                        <br><br>
+
+                        <i>“van:</i>
+                        <br>
+                        <i>myPort = new Serial(this, Serial.list()[5], 9600);</i>
+                        <br>
+                        <i>naar:</i> 
+                        <br>
+                        <i>myPort = new Serial(this, "COM6", 9600);”</i>
+                        
+                        <br><br>
+                        Om de witte achtergrond van het scherm met de cirkel te veranderen, heb ik de achtergrond veranderd in de draw-functie in mijn Processing. Nu zie je een rode achtergrond waarin een cirkel groter of kleiner wordt na het draaien van mijn Potentiometer.  
+                    </p> 
+                    
+                    <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/arduino-code.jpg" alt="..." />
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/proccesing-code.jpg" alt="..." />
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/arduinoandprocessing.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             <br>
+             
+                 <!-- EXERCISE 13 -->
+                <h5 class="kop">Exercise 13: Buttons </h5>
+
+                    <p class="tekst">  
+                        Bij deze opdracht was het de bedoeling dat we door op een knop te klikken de ledlamp uitdoen. Om dit te doen heb ik dezelfde kabel wegwerking gemaakt als in het voorbeeld van de handleiding. Vervolgens heb ik de codes gebruikt die op de Arduino-website stonden. Het enige was dat de code van de website ervoor zorgde dat het ledlamp aan ging in plaats van uit. Dit was makkelijk te fixen door de HIGH en LOW in de if-functie om te wisselen.
+                    </p>       
+
+                    <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/button-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/button.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             <br>
+
+                 <!-- EXERCISE 14 -->
+                <h5 class="kop">Exercise 14: Servomotor</h5>
+
+                    <p class="tekst">  
+                        Voor deze opdracht moest ik een Servomotor gebruiken. Ik heb het voorbeeld in de handleiding gebruikt om de kabel wegwerking zo goed mogelijk aan te sluiten. Daarna heb ik de aangegeven code in mijn Arduino toegevoegd. De opdracht was om de gegeven code aan te passen en er een leuke draai aan te geven.
+                        <br><br>
+                        Een servomotor kan maar 180 graden draaien. Dat betekende dat ik in de for-functie alleen van 0 tot 180 kon gebruiken. Omdat ik niet de volledige 180 graden wilde draaien, heb ik aanpassingen gemaakt in de for-functie. Ik heb ervoor gezorgd dat de servomotor maar een halve slag kon draaien door binnen 90 graden te blijven. De pijl draait eerst naar 67 graden en dan helemaal terug naar 0. Daarna twee keer 22 graden en terug naar 0 en tenslotte naar 45 graden en weer terug naar 0.
+                        <br><br>
+                        Om het nog leuker te maken heb ik Patrick Star geprint en geknipt. Vervolgens heb ik het lichaam van Patrick geplakt aan een stok en de arm aan de stok van de servomotor. In de video kan je nu zien dat Patrick Star een hamer heen en weer zwaait.
+                        
+                    </p>  
+                    <!--CODE VOOR DE AFBEELDINGEN/VIDEOS-->
+                    <div class="bewijs">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                       <img class="img-bewijs" src="assets/img/portfolio/servomotor-code.jpg" alt="..." />
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="bewijs-item" href="#!">
+                                    <video  class="arduinovideo" controls> <source src="assets/img/portfolio/servomotor.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>     
+             <br>
+
+
+
                 </div>
             </div>
         </section>
 
-
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container">
-                <small>
-                    Copyright &copy; Elmas Bayrak
-                    <!-- This script automatically adds the current year to your website footer-->
-                    <!-- (credit: https://updateyourfooter.com/)-->
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                </small>
-            </div>
-        </div>
+      
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
@@ -151,5 +395,9 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!--CODE VOOR DE AFBEELDINGEN-->
+        
+
     </body>
 </html>

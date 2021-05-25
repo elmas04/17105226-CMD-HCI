@@ -480,6 +480,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+
 }
 
 .img-thumbnail {
@@ -558,22 +559,22 @@ pre code {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 .row {
@@ -586,6 +587,8 @@ pre code {
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
+  margin: auto;
+
 }
 .no-gutters > .col,
 .no-gutters > [class*=col-] {
@@ -603,6 +606,7 @@ pre code {
   width: 100%;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  
 }
 
 .col {
@@ -6663,6 +6667,7 @@ button.bg-dark:focus {
 
 .align-items-center {
   align-items: center !important;
+  width: 50%;
 }
 
 .align-items-baseline {
@@ -10181,7 +10186,7 @@ h3 {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+ /* max-width: 25rem;*/
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -10201,7 +10206,7 @@ h3 {
 }
 
 .caption-content{
-  margin: 0% 5% 0% 5%;
+  margin: 0% 10% 0% 10%;
 }
 
 .portfolio-modal .portfolio-modal-title {
@@ -10328,6 +10333,9 @@ form .row:first-child .floating-label-form-group {
 .tabcontent {
   padding: 3%;
   border-top: none;
+  width: 75%;
+  margin: auto;
+  
 }
 
 /* read more button*/
@@ -10356,3 +10364,52 @@ form .row:first-child .floating-label-form-group {
   width: 70%;
   margin: auto;
 }
+
+/* alle afbeeldingen en video's van WORKSHOP 2: ARDUINO*/
+
+.bewijs{
+  float: left;
+  vertical-align: middle;
+  margin-bottom: 5%;
+
+}
+
+
+/*video CODES */
+.arduinovideo{
+
+}
+
+video {
+  width: 90%;
+  border-radius: 2%;
+  margin: 2%;
+  vertical-align: middle;
+}
+
+
+/* afbeelding CODES*/
+/* Style the Image Used to Trigger the Modal */
+
+.bewijs-item{
+  margin-bottom: 5%;
+  cursor: pointer;
+    position: relative;
+    display: block;
+    /* max-width: 25rem; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.img-bewijs{
+  max-width: 90%;
+    height: auto;
+    margin: 2%;
+    border-radius: 2%;
+}
+.extra-video{
+  max-width: 100%;
+  flex: 0 0 41%;
+
+}
+
