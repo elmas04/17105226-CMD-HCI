@@ -10413,3 +10413,8 @@ video {
 
 }
 
+/*Youtube opmaak*/
+iframe{
+  border-radius: 2%;
+  width: 50%;
+}
