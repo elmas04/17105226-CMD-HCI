@@ -10360,6 +10360,14 @@ form .row:first-child .floating-label-form-group {
   height: auto;
 }
 
+
+/* afbeeldingen van storyboard AC*/
+.img-storyboard-ac {
+  width: 100%;
+  height: auto;
+}
+
+
 .pagina{
   width: 70%;
   margin: auto;
