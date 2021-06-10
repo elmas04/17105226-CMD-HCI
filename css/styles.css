@@ -10345,12 +10345,12 @@ form .row:first-child .floating-label-form-group {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 40px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 18px;
+
   margin: auto;
   font-weight: bolder;
-  width: 50%;
   align-items: center;
 }
 
