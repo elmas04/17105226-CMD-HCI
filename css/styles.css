@@ -10423,6 +10423,7 @@ video {
 }
 
 
+
 /* afbeelding CODES*/
 /* Style the Image Used to Trigger the Modal */
 
@@ -10550,3 +10551,10 @@ iframe{
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+/*labweken*/
+.img-labweken{
+  border: 2px solid #313443;
+  border-radius: 10px;
+  width: 53%;
+  }
